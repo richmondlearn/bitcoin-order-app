@@ -28,7 +28,7 @@ jobs:
       - name: Run scan with ODC
         run: |
           dependency-check/bin/dependency-check.sh --project "bitcoin" --scan . -o ODC-report -l logs.log
-	  cat logs.log
+          cat logs.log
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
